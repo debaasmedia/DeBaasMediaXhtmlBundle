@@ -45,6 +45,6 @@ The bundle is released under the MIT license. For more information see the
 [license][4] file distibuted with this bundle.
 
 [1]: http://hixie.ch/advocacy/xhtml
-[2]: http://github.com/symfony/symfony/tree/master/src/Symfony/Bundle/AsseticBundle
-[3]: ./Resources/doc/index.rst
-[4]: ./Resources/meta/LICENSE
+[2]: https://github.com/symfony/symfony/tree/master/src/Symfony/Bundle/AsseticBundle
+[3]: https://github.com/debaasmedia/DeBaasMediaXhtmlBundle/blob/develop/Resources/doc/index.rst
+[4]: https://github.com/debaasmedia/DeBaasMediaXhtmlBundle/blob/develop/Resources/meta/LICENSE
