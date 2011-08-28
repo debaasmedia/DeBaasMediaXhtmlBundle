@@ -3,18 +3,31 @@ type if the browser accepts content served as XML.
 
 Installation
 ============
-1. Add the bundle to the autoloader:
-       // add the bundle source to your autoload.php
-       $loader->registerNamespaces(array('DeBaasMedia' => __DIR__ . '/../vendor/bundles'
-                                        ));
-2. Register your bundle in the kernel:
-       // add this to your
-       public function registerBundles ()
-       {
-         return array(// all the framework bundles
-                     ,new DeBaasMedia\Bundle\XhtmlBundle\DeBaasMediaXhtmlBundle
-                     );
-       }
+ 1. Add the bundle to the autoloader:
+    
+    ```php
+    <?php
+    // add the extension source to your autoload.php
+    $loader->registerNamespaces(array('DeBaasMedia\\Bundle\\XhtmlBundle' => __DIR__ . '/../vendor/bundles/DeBaasMedia/Bundle'
+                                     ));
+    ```
+    
+ 2. Register your bundle in the kernel:
+    
+    ```php
+    <?php
+    // add this to your
+    public function registerBundles ()
+    {
+      $bundles = array();
+    
+      // add all the framework bundles
+    
+      $bundles[] = new DeBaasMedia\Bundle\XhtmlBundle\DeBaasMediaXhtmlBundle()
+    
+      return $bundles;
+    }
+    ```
 
 Known Issues
 ============
